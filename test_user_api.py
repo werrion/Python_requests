@@ -19,7 +19,9 @@ headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
 }
+def test_post():
+    response = requests.request("POST", url, headers=headers, data=payload)
+    print(response.text)
 
-response = requests.request("POST", url, headers=headers, data=payload)
+test_post()
 
-print(response.text)
