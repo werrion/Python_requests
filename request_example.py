@@ -1,6 +1,31 @@
+# import requests
+# data = requests.post ("https://petstore.swagger.io/v2/user/createWithList")
+# print(data.status_code)
+# assert data.status_code == 200
+import allure
 import requests
-data = requests.post ("https://petstore.swagger.io/v2/user/createWithList")
-print(data.status_code)
-assert data.status_code == 200
+import json
+
+url = "https://petstore.swagger.io/v2/user/createWithList"
+
+payload = json.dumps([
+  {
+    "id": "999889898989",
+    "username": "{{username}}",
+    "firstName": "Test2",
+    "lastName": "Test2",
+    "email": "Test2@gmail.com",
+    "password": "123",
+    "phone": "{{phone}}",
+    "userStatus": 1
+  }
+])
+headers = {
+  'Content-Type': 'application/json',
+  'Accept': 'application/json'
+}
+def test_post():
+    response = requests.request("POST", url, headers=headers, data=payload)
+    print(response.text)
 
 
