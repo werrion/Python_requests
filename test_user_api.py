@@ -27,3 +27,6 @@ from request_example import *
 test_post()
 test_ok()
 test_fail()
+test_ok()
+test_ok()
+test_ok()
