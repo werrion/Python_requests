@@ -22,11 +22,11 @@
 # def test_post():
 #     response = requests.request("POST", url, headers=headers, data=payload)
 #     print(response.text)
-from request_example import *
-
-test_post()
-test_ok()
-#test_fail()
-test_ok()
-test_ok()
-test_ok()
+# from request_example import *
+#
+# test_post()
+# test_ok()
+# #test_fail()
+# test_ok()
+# test_ok()
+# test_ok()
