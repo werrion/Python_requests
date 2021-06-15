@@ -30,4 +30,10 @@ def test_post():
     response = requests.request("POST", url, headers=headers, data=payload)
     print(response.text)
 
+@allure.step("Тест Ok статус")
+def test_ok():
+    1==1
 
+@allure.step("Тест fail статус")
+def test_fail():
+    1==2
