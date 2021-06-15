@@ -32,8 +32,8 @@ def test_post():
 
 @allure.step("Тест Ok статус")
 def test_ok():
-    1==1
+    assert 1==1
 
 @allure.step("Тест fail статус")
 def test_fail():
-    1==2
+    assert 1==2
