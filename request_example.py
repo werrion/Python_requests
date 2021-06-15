@@ -39,5 +39,5 @@ def test_fail():
     assert 1==2
 
 @allure.step("Тест Ok1 статус")
-def test_ok():
+def test_ok1():
     assert 2==2
