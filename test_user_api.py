@@ -25,8 +25,9 @@
 from request_example import *
 
 if __name__ == '__main__':
-    print('init')
+    """print('init')
     test_post()
     test_ok()
     # test_fail()
-    test_ok1()
+    test_ok1()"""
+    pass
