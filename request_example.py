@@ -24,6 +24,7 @@ headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
 }
+
 @allure.story("Тест POST запрос")
 @allure.step("Проверка ответа POST запроса ")
 def test_post():
