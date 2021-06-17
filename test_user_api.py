@@ -14,7 +14,11 @@ def test_post():
 def test_ok():
     assert 1 == 1
 
-
+"""@allure.step("Тест fail статус")
+def test_fail():
+    assert 1 == 2
+    
+"""
 
 
 
