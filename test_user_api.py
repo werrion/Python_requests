@@ -23,8 +23,8 @@
 #     response = requests.request("POST", url, headers=headers, data=payload)
 #     print(response.text)
 from request_example import *
-
-test_post()
-test_ok()
-#test_fail()
-test_ok1()
+if __name__ == '__main__':
+    test_post()
+    test_ok()
+    #test_fail()
+    test_ok1()
